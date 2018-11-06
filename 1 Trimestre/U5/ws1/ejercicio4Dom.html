@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Ejercicio 4</title>
+  
+</head>
+<center>
+<body>
+    <p>4. Crea una web con una lista de elementos y un botón que cada vez que pulsemos introduzca una entrada nueva en la lista.</p>
+    <button type="button" onclick="expandirArray()" autofocus>Añadir</button>
+</center>
+    <div>
+        <ul id="lista">
+
+        </ul>
+    </div>
+    
+    <script>
+        function expandirArray() {
+            let list = document.getElementById("lista")
+            let contenido = prompt("Dale un nombre");
+            list.innerHTML += `<li>${contenido}</li>`;
+        }
+    </script>
+
+</body>
+
+</html>
